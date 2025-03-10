@@ -1,8 +1,7 @@
 - 👋 Hi, I’m @Ghostosmoke
-- 👀 I’m interested in AI
-- 🌱 I’m currently learning Python
-- 💞️ I’m looking to collaborate on AI company or school
-- 📫 How to reach me ...
+- 👀 I’m interested in Python Development and DevOps engineer
+- 💞️ I’m looking to collaborate government agencies
+- 📫 How to reach me sula293@gmail.com
 
 <!---
 Ghostosmoke/Ghostosmoke is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
