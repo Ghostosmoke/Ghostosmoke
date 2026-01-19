@@ -4,6 +4,7 @@
 ## 👨‍💻 About Me
 
 Python Developer with 3+ years of experience in full-stack development, system administration, and DevOps practices. Passionate about creating efficient solutions, optimizing processes, and continuous learning. Strong background in mathematics and computer science with practical experience in both development and infrastructure management.
+![Typing](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=7B68EE&width=600&lines=AI+Desktop+Developer;Whisper+%2B+Ollama+Engineer;Offline+AI+Applications)
 
 ## 🛠 Technical Skills
 
