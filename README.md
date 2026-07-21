@@ -1,128 +1,99 @@
+<!-- Animated header -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=200&section=header&text=Sergey%20Sula-Petrovskiy&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
+</p>
+
+<!-- Typing effect -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=500&color=764ba2&center=true&vCenter=true&multiline=false&width=700&height=80&lines=Python+Developer+%7C+System+Engineer;Building+offline+AI+systems+on+real+hardware;Whisper+%E2%80%A2+Ollama+%E2%80%A2+Docker+%E2%80%A2+Linux;Performance+over+convenience" />
+</p>
+
+---
+
 # Sergey Sula-Petrovskiy
 
-![Typing](https://readme-typing-svg.demolab.com?font=Fira+Code\&size=22\&pause=1000\&color=7B68EE\&width=650\&lines=AI+Desktop+Developer;Python+%2B+DevOps+Engineer;Whisper+%2B+Ollama+Projects;Offline+AI+Applications)
+Пишу софт, который работает на реальном железе, а не только в облаке.
+Основной фокус — offline AI-системы, обработка речи и инфраструктура вокруг них.
 
 ---
 
-## 🧠 What I Do
+## Чем занимаюсь
 
-I build **offline AI applications** and infrastructure-aware systems with a strong focus on performance, reliability, and real hardware constraints.
+Строю приложения, где ограничения по памяти, CPU и сети — не баг, а условие задачи.
+Работаю на стыке Python-разработки и системного администрирования: от настройки FreePBX до упаковки моделей в Docker.
 
-**Main areas:**
-
-* 🎙️ Speech-to-Text systems (Whisper, Faster-Whisper)
-* 🤖 Local LLM applications (Ollama)
-* 🖥️ Desktop apps with real UX (PyQt6)
-* ⚙️ Linux, Docker, DevOps & system administration
-
-I enjoy working close to the system level, where **software meets hardware**.
+**Основные направления:**
+- **Speech-to-Text** (Whisper, Faster-Whisper) — транскрипция, диаризация, работа с шумом
+- **Локальные LLM** (Ollama) — без API-ключей, без интернета, на своём железе
+- **Desktop-приложения** (PyQt6) — потому что не всё должно жить в браузере
+- **Linux, Docker, сети** — чтобы всё это реально работало в продакшене
 
 ---
 
-## 🚀 Featured Projects
+## Проекты
 
-### 🎙️ AI Voice Chat (Whisper + Ollama)
+### 🎙️ AI Voice Chat — офлайн-ассистент с голосовым вводом
+Десктопное приложение: запись с микрофона → транскрипция → ответ от локальной LLM.
+- Поддержка CPU и GPU пресетов (Faster-Whisper)
+- Конфигурация под конкретное железо
+- PyQt6 интерфейс, без Electron-оверхеда
 
-Offline desktop application for audio transcription and question answering.
+`Python · Whisper · Faster-Whisper · Ollama · PyQt6`
+➡️ *[ссылка на репозиторий]*
 
-**Key features:**
+### 📞 Анализ телефонных переговоров
+Система для записи и разбора звонков на базе FreePBX.
+- Настройка записи вызовов на АТС
+- Сравнение STT-движков, выбор оптимального под задачу
+- Диаризация спикеров и анализ эмоциональной окраски
+- Автоматизация через API
 
-* Microphone recording & audio file input
-* Fast transcription (CPU / GPU presets)
-* Local LLM responses via Ollama
-* Hardware-aware configuration
-* PyQt6 desktop interface
+`FreePBX · Python · Audio Processing · NLP`
 
-**Stack:** Python, Whisper, Faster-Whisper, Ollama, PyQt6
-➡️ *Repository link here*
+### 📊 Моделирование транспортных потоков
+Математическая модель нерегулируемого перекрёстка.
+- Свой OOP-движок симуляции с нуля
+- Визуализация в реальном времени
+- Алгоритмическая оптимизация пропускной способности
 
----
-
-### 📞 Telephone Conversation Analysis System
-
-System for analyzing recorded phone calls with transcription and NLP processing.
-
-**Highlights:**
-
-* FreePBX call recording setup
-* Speech-to-Text comparison and evaluation
-* Speaker diarization & emotional tone analysis
-* API integration and automation
-
-**Stack:** FreePBX, Python, Audio Processing, NLP
+`Python · OOP · Math Modeling`
 
 ---
 
-### 📊 Traffic Simulation & Optimization
+## Стек
 
-Mathematical modeling of traffic flows at unsignalized intersections.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,bash,linux,docker,postgres,git,github,pytorch,tensorflow&perline=9" />
+</p>
 
-**Highlights:**
-
-* Custom OOP-based simulation engine
-* Graphical visualization subsystem
-* Algorithmic optimization of traffic flow
-
-**Stack:** Python, OOP, Mathematical Modeling
-
----
-
-## 🛠 Tech Stack
-
-**Languages**
-
-* Python, SQL
-
-**AI & Data**
-
-* Whisper, Faster-Whisper
-* Ollama (local LLMs)
-* Audio processing, NLP
-* Data parsing & preprocessing
-
-**Desktop & Backend**
-
-* PyQt6
-* REST APIs
-* Testing (Pytest)
-
-**DevOps & Systems**
-
-* Linux (Ubuntu, Mint, ALT Linux)
-* Docker
-* Networking & system administration
-* Domain & user management
+| Область | Инструменты |
+|---|---|
+| **Языки** | Python, SQL, Bash |
+| **AI / ML** | Whisper, Faster-Whisper, Ollama, NLP, audio processing |
+| **Desktop / Backend** | PyQt6, REST API, Pytest |
+| **Инфраструктура** | Linux (Ubuntu, Mint, ALT), Docker, сети, домены, пользователи |
 
 ---
 
-## 🧩 How I Think as an Engineer
+## Как я принимаю решения
 
-* Performance matters, especially on limited hardware
-* Offline-first solutions are underrated and powerful
-* Clean architecture > quick hacks
-* Tools should adapt to the system, not the other way around
-
----
-
-## 📚 Background
-
-🎓 **Mathematics & Computer Science**
-Kuban State University (expected 2025)
-
-💼 **Python Developer / System Engineer**
-Experience with real infrastructure, production systems, and high-load environments.
+- **Производительность на первом месте.** Если модель не влезает в 8 ГБ RAM — это проблема архитектуры, а не пользователя.
+- **Offline-first.** Зависимость от интернета — это точка отказа. Где можно обойтись без неё — обхожусь.
+- **Чистая структура > быстрый хак.** Код, который работает «как-то», ломается в самый неподходящий момент.
+- **Инструмент под систему, а не наоборот.** Не натягиваю Kubernetes на задачу, которую решает cron.
 
 ---
 
-## 🌐 Languages
 
-* Russian — Native
-* English — B1 (Intermediate)
+## Фон
 
----
+**Образование:** Математика и информатика, КубГУ (выпуск 2025)
 
-<div align="center">
+**Опыт:** Python Developer / System Engineer — работа с реальной инфраструктурой, продакшен-системами и высоконагруженными средами.
 
-**“Building practical AI systems that work outside the cloud.”**
+**Языки:** Русский (родной), English (B1)
 
-</div>
+<!-- Animated footer -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=100&section=footer&animation=fadeIn" />
+</p>
