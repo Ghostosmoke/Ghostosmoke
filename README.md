@@ -5,93 +5,101 @@
 
 <!-- Typing effect -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=500&color=764ba2&center=true&vCenter=true&multiline=false&width=700&height=80&lines=Python+Developer+%7C+System+Engineer;Building+offline+AI+systems+on+real+hardware;Whisper+%E2%80%A2+Ollama+%E2%80%A2+Docker+%E2%80%A2+Linux;Performance+over+convenience" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=500&color=764ba2&center=true&vCenter=true&multiline=false&width=700&height=80&lines=Python+Developer+%7C+DevOps+%7C+SysAdmin;Building+offline+AI+%26+resilient+infrastructure;Proxmox+%E2%80%A2+Docker+%E2%80%A2+Linux+%E2%80%A2+Networks;Performance+and+reliability+over+convenience" />
 </p>
 
 ---
 
 # Sergey Sula-Petrovskiy
 
-Пишу софт, который работает на реальном железе, а не только в облаке.
-Основной фокус — offline AI-системы, обработка речи и инфраструктура вокруг них.
+Пишу софт и строю инфраструктуру, которая работает на реальном железе, а не только в абстрактном облаке. 
+Основной фокус — стык Python-разработки, системного администрирования и DevOps-практик.
 
 ---
 
 ## Чем занимаюсь
 
-Строю приложения, где ограничения по памяти, CPU и сети — не баг, а условие задачи.
-Работаю на стыке Python-разработки и системного администрирования: от настройки FreePBX до упаковки моделей в Docker.
+Строю приложения и системы, где ограничения по памяти, CPU и сети — не баг, а условие задачи. Глубоко погружаюсь в DevOps: от виртуализации и настройки сетей до CI/CD и мониторинга.
 
 **Основные направления:**
-- **Speech-to-Text** (Whisper, Faster-Whisper) — транскрипция, диаризация, работа с шумом
-- **Локальные LLM** (Ollama) — без API-ключей, без интернета, на своём железе
-- **Desktop-приложения** (PyQt6) — потому что не всё должно жить в браузере
-- **Linux, Docker, сети** — чтобы всё это реально работало в продакшене
+- **DevOps & SysAdmin:** Виртуализация (Proxmox VE), контейнеризация (Docker), администрирование Linux (Ubuntu, Mint, ALT, AstraLinux), управление сетями и пользователями.
+- **Сетевая инфраструктура:** Настройка отказоустойчивого удаленного доступа (WireGuard, OpenVPN, VLESS + Reality), работа с FreePBX/Asterisk, анализ трафика (Wireshark).
+- **Offline AI & Backend:** Локальные LLM (Ollama), Speech-to-Text (Whisper), разработка API на FastAPI/Flask.
+- **Desktop-приложения:** PyQt6 для задач, где веб-интерфейс избыточен или невозможен.
 
 ---
 
 ## Проекты
 
-### 🎙️ AI Voice Chat — офлайн-ассистент с голосовым вводом
-Десктопное приложение: запись с микрофона → транскрипция → ответ от локальной LLM.
-- Поддержка CPU и GPU пресетов (Faster-Whisper)
-- Конфигурация под конкретное железо
-- PyQt6 интерфейс, без Electron-оверхеда
+### 🛡️ Инфраструктура удаленного доступа и VPN
+Обеспечение стабильного и защищенного соединения в условиях сетевых ограничений.
+- Развертывание и поддержка WireGuard и OpenVPN серверов.
+- Внедрение современных протоколов (VLESS + Reality) для обхода блокировок и обеспечения стабильного коннекта.
+- Мониторинг доступности (Uptime) и настройка резервного копирования серверов.
 
-`Python · Whisper · Faster-Whisper · Ollama · PyQt6`
-➡️ *[ссылка на репозиторий]*
+`Linux · WireGuard · OpenVPN · VLESS/Reality · Networking`
 
-### 📞 Анализ телефонных переговоров
-Система для записи и разбора звонков на базе FreePBX.
-- Настройка записи вызовов на АТС
-- Сравнение STT-движков, выбор оптимального под задачу
-- Диаризация спикеров и анализ эмоциональной окраски
-- Автоматизация через API
+### 📞 Система анализа телефонных переговоров
+End-to-end решение для записи и NLP-обработки звонков на базе FreePBX.
+- Настройка записи вызовов на АТС (Asterisk/FreePBX).
+- Парсинг и транскрибация аудио (DeepPavlov, NLTK/spaCy, Faster-Whisper).
+- Диаризация спикеров и анализ эмоциональной окраски.
+- Автоматизация пайплайна через REST API и Docker.
 
-`FreePBX · Python · Audio Processing · NLP`
+`FreePBX · Python · Docker · FastAPI · NLP · PostgreSQL`
 
-### 📊 Моделирование транспортных потоков
-Математическая модель нерегулируемого перекрёстка.
-- Свой OOP-движок симуляции с нуля
-- Визуализация в реальном времени
-- Алгоритмическая оптимизация пропускной способности
+### 📊 Аналитический веб-сервис для госзакупок
+Платформа для поиска и анализа данных с тендерных площадок.
+- Разработка парсеров (Selenium, BeautifulSoup) для сбора актуальных данных.
+- Выявление скрытых связей между участниками закупок с помощью графовых алгоритмов (NetworkX).
+- Визуализация данных и интерактивный интерфейс для бизнес-аналитики.
 
-`Python · OOP · Math Modeling`
+`Python · FastAPI · PostgreSQL · SQLAlchemy · NetworkX · Docker`
+
+### 🚦 Моделирование транспортных потоков
+Математическая модель нерегулируемого перекрёстка с оптимизацией.
+- Собственный OOP-движок симуляции и графическая визуализация в реальном времени.
+- Алгоритмическая оптимизация пропускной способности.
+
+`Python · OOP · NumPy · Matplotlib · Pygame`
 
 ---
 
 ## Стек
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,bash,linux,docker,postgres,git,github,pytorch,tensorflow&perline=9" />
+  <img src="https://skillicons.dev/icons?i=python,bash,linux,docker,postgres,git,github,fastapi,pytorch&perline=9" />
 </p>
 
 | Область | Инструменты |
 |---|---|
-| **Языки** | Python, SQL, Bash |
-| **AI / ML** | Whisper, Faster-Whisper, Ollama, NLP, audio processing |
-| **Desktop / Backend** | PyQt6, REST API, Pytest |
-| **Инфраструктура** | Linux (Ubuntu, Mint, ALT), Docker, сети, домены, пользователи |
+| **Языки** | Python, SQL, Bash, PHP |
+| **DevOps & SysAdmin** | Docker, Proxmox VE, Linux (Ubuntu/ALT/Astra), Wireshark, Cisco PT |
+| **Сети и Безопасность** | WireGuard, OpenVPN, VLESS+Reality, FreePBX, Asterisk, TCP/IP |
+| **Backend & Data** | FastAPI, Flask, PostgreSQL, MySQL, Pandas, NumPy, NetworkX |
+| **AI / ML** | Whisper, Ollama, DeepPavlov, NLTK/spaCy, Scikit-learn |
 
 ---
 
 ## Как я принимаю решения
 
-- **Производительность на первом месте.** Если модель не влезает в 8 ГБ RAM — это проблема архитектуры, а не пользователя.
-- **Offline-first.** Зависимость от интернета — это точка отказа. Где можно обойтись без неё — обхожусь.
-- **Чистая структура > быстрый хак.** Код, который работает «как-то», ломается в самый неподходящий момент.
-- **Инструмент под систему, а не наоборот.** Не натягиваю Kubernetes на задачу, которую решает cron.
+- **Производительность на первом месте.** Если модель или сервис не влезает в доступные ресурсы — это проблема архитектуры, а не пользователя.
+- **Offline-first и отказоустойчивость.** Зависимость от внешнего интернета или API — это точка отказа. Где можно сделать локально и надежно — делаю так.
+- **Чистая структура > быстрый хак.** Код и инфраструктура, которые работают «как-то», ломаются в самый неподходящий момент.
+- **Инструмент под систему, а не наоборот.** Не натягиваю Kubernetes на задачу, которую элегантно решает cron + bash-скрипт.
 
 ---
 
-
 ## Фон
 
-**Образование:** Математика и информатика, КубГУ (выпуск 2025)
+**Образование:** Математика и компьютерные науки, Кубанский государственный университет (КубГУ)
 
-**Опыт:** Python Developer / System Engineer — работа с реальной инфраструктурой, продакшен-системами и высоконагруженными средами.
+**Опыт:** 
+- **Системный администратор / DevOps (К-Lab КубГУ):** Управление серверной инфраструктурой на Proxmox VE, контейнеризация учебных проектов, настройка VPN и мониторинг.
+- **Системный администратор (РЖД):** Настройка ЛВС, администрирование Windows/Linux (включая AstraLinux), работа с Active Directory и СКС.
+- **Python Developer:** Разработка end-to-end систем анализа данных, парсинга и backend-сервисов для реального бизнеса.
 
-**Языки:** Русский (родной), English (B1)
+**Языки:** Русский (родной), English (B1 — читаю документацию и пишу комментарии в коде)
 
 <!-- Animated footer -->
 <p align="center">
